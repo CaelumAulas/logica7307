@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<h1>
+    Média de idades
+</h1>
+
+<script>
+    var idadeArt = prompt("Digite a idade do Art")
+    var idadeMarcelo = 38
+    var idadeGustavo = 18
+    var idadeRoberta = 18
+    var idadeMarina = 13
+
+    var mediaSegundaFileira = 28
+    var mediaTerceiraFileira = 27.66
+    var mediaPrimeiraFileira = (idadeRoberta+idadeMarcelo+idadeGustavo+idadeMarina+idadeArt)/5
+
+    document.write(mediaPrimeiraFileira)
+    document.write("<br> <br>")
+    document.write(mediaSegundaFileira)
+    document.write("<br> <br>")
+    document.write(mediaTerceiraFileira)
+    document.write("<br> <br>")
+
+    var media = (mediaPrimeiraFileira+mediaSegundaFileira+mediaTerceiraFileira)/ 3
+    document.write(Math.ceil(media))
+
+    
+</script>
