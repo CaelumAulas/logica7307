@@ -4,27 +4,47 @@
 
 <h2>Uber</h2>
 <script>
-    var distancia = parseFloat(prompt("Digite a distância").replace(",", "."))
+
+    function pegaNumero() {
+    return parseFloat(prompt(texto).replace("O", 0).replace(",", "."))
+    }
+
+    function formataMoeda() {
+    return "R$ " + numero.toFixed(2).replace(".", ",")
+    }
+
+    var texto = "Digite a distância"
+    var distancia = pegaNumero()
+    
     var minuto = distancia / 25 * 60
     var valorDoUber = (1.40 * distancia + 0.26 * minuto)
-    document.write("R$" + valorDoUber.toFixed(2).replace(".", ","))
+    var numero = valorDoUber
+    document.write(formataMoeda())
 </script>
 
 <h2>Carro</h2>
 
 <script>
-    var autonomia = parseFloat(prompt("Digite a autonomia").replace(",", "."))
+    texto = "Digite a autonomia"
+    var autonomia = pegaNumero()
+
     var precoLitro = 3.50
     
     var totalGasolina = distancia / autonomia * precoLitro
-    var totalEstacionamento = parseFloat(prompt("Quanto custa o estacionamento.").replace(",", "."))
+    
+    texto = "Digite o estacionamento"
+    var totalEstacionamento = pegaNumero()
 
     // Concatenação
-    document.write("Gasolina: R$ " + totalGasolina.toFixed(2).replace(".", ","))
+    numero = totalGasolina
+    document.write("Gasolina:" + formataMoeda())
     document.write("<br>")
-    document.write("Estacionamento: R$ " + totalEstacionamento.toFixed(2).replace(".", ","))
+
+    numero = totalEstacionamento
+    document.write("Estacionamento:" + formataMoeda())
     document.write("<br>")
     var valorCarro = totalGasolina + totalEstacionamento
-    document.write("Total: R$ " + valorCarro.toFixed(2).replace(".", ","))
+    numero = valorCarro
+    document.write("Total:" +  formataMoeda())
 </script>
 
