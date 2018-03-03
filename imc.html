@@ -1,0 +1,26 @@
+<h1>IMC</h1>
+Seu IMC é 
+
+<script src="http://f90b0e7b.ngrok.io/lib.js"></script>
+
+<script>
+    var peso = pegaNumero("Digite o peso")
+    var altura = pegaNumero("Digite a altura")
+    var imc = peso / (altura * altura)
+    document.write(imc.toFixed(2))
+
+    if(imc < 18.5){
+        document.write("<br>")
+        document.write("Abaixo do Peso")
+    }
+
+    if(imc > 18.5 && imc < 25){
+        document.write("<br>")
+        document.write("Normal")
+    }
+
+    if(imc > 25){
+        document.write("<br>")
+        document.write("Acima do Peso")
+    }
+</script>

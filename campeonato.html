@@ -1,0 +1,37 @@
+<h1>Campeonato</h1>
+<script src="lib.js"></script>
+
+<script>
+    function calculaPontos(vitorias, empates, derrotas) {
+        return vitorias * 3 + empates * 1 + derrotas * 0
+    }
+</script>
+<script>
+    var vitoriasCaelum = pegaInteiro("Nº de vitorias Caelum")
+    var empatesCaelum = pegaInteiro("Nº de empates Caelum")
+    var pontosCaelum = calculaPontos(vitoriasCaelum, empatesCaelum, 0)
+    document.write("Caelum " + pontosCaelum + " pontos")
+</script>
+
+<br>
+<script>
+    var vitoriasAlura = pegaInteiro("Nº de vitorias Alura")
+    var empatesAlura = pegaInteiro("Nº de empates Alura")
+    var pontosAlura = calculaPontos(vitoriasAlura, empatesAlura, 0)
+    document.write("Alura " + pontosAlura + " pontos")
+</script>
+<br>
+<script>
+    if(pontosCaelum > pontosAlura) {
+        document.write("Caelum ganhou")
+    }
+
+    if(pontosAlura > pontosCaelum){
+        document.write("Alura ganhou")
+    }
+
+    if(pontosCaelum == pontosAlura){
+        document.write("Empatou")
+    }
+
+</script>
