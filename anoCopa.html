@@ -1,0 +1,14 @@
+<h1>Copa do Mundo</h1>
+<script>
+    var anoDaCopa = 1930
+    var anoAtual = new Date().getFullYear()
+    
+    while(anoDaCopa <= anoAtual ){
+        // if(anoDaCopa < 1938 || anoDaCopa > 1950)){
+        if(!(anoDaCopa > 1938 && anoDaCopa < 1950)){
+            document.write(anoDaCopa + " teve copa <br>")
+        }
+        anoDaCopa = anoDaCopa + 4
+    }
+        
+    </script>

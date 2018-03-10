@@ -9,3 +9,9 @@ function pegaInteiro(texto) {
 function formataMoeda() {
 return "R$ " + numero.toFixed(2).replace(".", ",")
 }
+
+function mostra(texto) {
+    var tag = document.createElement("p")
+    tag.textContent = texto
+    document.body.appendChild(tag)
+}

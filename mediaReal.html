@@ -1,0 +1,21 @@
+<h1>Media</h1>
+
+<script src="lib.js"></script>
+<script>
+    var soma = 0
+    
+    var qtAlunos = pegaNumero("Qt pessoas")
+
+    // var i = 1
+    // while(i <= qtAlunos){
+    //     soma = soma + pegaNumero("Digite a idade")
+    //     i = i + 1
+    // }
+
+    for(var i = 1; i <= qtAlunos; i = i + 1){
+        soma = soma + pegaNumero("Digite a idade")
+    }
+
+    var media = soma / qtAlunos
+    document.write("A média é: " + media)
+</script>
